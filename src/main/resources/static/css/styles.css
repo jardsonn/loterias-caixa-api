@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+
+body {
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h3 {
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+p {
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: Nunito, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+.nav-header {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #0098ff;
+    min-width: 100vw;
+    min-height: 68px;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu-header li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menu-header a {
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.menu-header a:hover {
+    opacity: 90%;
+}
+
+
+a {
+    color: #0098ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #02538b;
+}
+
+.container {
+    padding: 16px;
+}
+
+.info-title {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 5px;
+    color: #686868;
+}
+
+.logo-header {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+
+.logo-header a {
+    color: white;
+}
+
+hr {
+    margin: 20px -16px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.nav-header .logo-header small {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 2px 4px;
+    vertical-align: super;
+    border-radius: 57px;
+    background: #7d8492;
+}
+
+.nav-header .logo-header small pre {
+    margin: 0;
+
+}
+
+.loterias .loteria-item small {
+    font-size: 1.2em !important;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 2px 4px;
+    vertical-align: super;
+}
+
+.loteria-item {
+    border: 1px solid #0098ff;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 152, 255, 0.05);
+}
+
+section.models .info-title {
+    color: #2b2b2b;
+    font-weight: 900;
+}
+
+.rotorno-exemplo pre {
+    font-size: 14px;
+    font-family: Consolas, sans-serif;
+    background-color: #eaeaea;
+    border: 1px solid #0098ff;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+@media (max-width: 575px) {
+    .rotorno-exemplo pre {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.result-megasena, .result-lotofacil, .result-lotomania, .result-quina {
+    display: none;
+}
+
+.result-megasena.show, .result-lotofacil.show, .result-lotomania.show, .result-quina.show {
+    display: block;
+}
+
+.section-credits {
+    padding: 15px 0 15px 0;
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #1f2120;
+}
+
+.section-credits a {
+    color: white;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+pre.version {
+    font-size: 10px;
+}
+
+pre.lot-name {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+
+

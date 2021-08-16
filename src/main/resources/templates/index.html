@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Loterias CAIXA API</title>
+</head>
+<body>
+<header>
+    <nav class='nav-header'>
+        <div class="logo-header">Loterias CAIXA API<small>
+            <pre class="version">1.0</pre>
+        </small></div>
+        <ul class='menu-header'>
+            <li><a href='https://github.com/jcs-eu/loterias-caixa-api'>GitHub</a></li>
+            <li><a href='https://leterias-caixa.herokuapp.com/swagger-ui.html'>Swagger-UI</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="info-title">Informações</div>
+    <hr>
+    <div class="info_body">
+        <p><strong>Loterias CAIXA API</strong>, como o próprio nome já diz, é uma <strong>API
+            REST</strong> que foi construída usando o framework
+            <a href="https://spring.io/projects/spring-boot" target="_blank">Spring
+                Boot</a> e a biblioteca <a href="https://jsoup.org/apidocs/" target="_blank">Jsoup</a> para extrair e os
+            dados do site da CAIXA. Como a base dessa API é um Web Scraping, qualquer alteração na estrutura do site
+            da CAIXA acarretará em um erro.
+        </p>
+        <p>Para mais informações, acesse a documentação completa no <a
+                href='https://leterias-caixa.herokuapp.com/swagger-ui.html'>Swagger-UI</a>. </p>
+    </div>
+    <hr>
+    <div class="info-title">Exemplo de retorno</div>
+    <hr>
+    <div class="info_body">
+        <section class="models">
+            <span class="info-title">Loterias</span>
+            <div class="loterias">
+                <div class="loteria-item mega-sena">
+                    Mega-Sena<small>
+                    <pre class="lot-name">/api/v0/megasena</pre>
+                </small>
+                </div>
+                <div class="rotorno-exemplo">
+                    <div class="result-megasena">
+                        <pre><span th:text="${responseMegaSena}"></span> </pre>
+                    </div>
+                </div>
+                <div class="loteria-item lotofacil">Lotofacil <small>
+                    <pre class="lot-name">/api/v0/lotofacil</pre>
+                </small>
+                </div>
+                <div class="rotorno-exemplo">
+                    <div class="result-lotofacil">
+                        <pre><span th:text="${responseLotofacil}"></span></pre>
+                    </div>
+                </div>
+                <div class="loteria-item lotomania">Lotomania <small>
+                    <pre class="lot-name">/api/v0/lotomania</pre>
+                </small>
+                </div>
+                <div class="rotorno-exemplo">
+                    <div class="result-lotomania">
+                        <pre><span th:text="${responseLotomania}"></span></pre>
+                    </div>
+                </div>
+                <div class="loteria-item quina">Quina <small>
+                    <pre class="lot-name">/api/v0/quina</pre>
+                </small>
+                </div>
+                <div class="rotorno-exemplo">
+                    <div class="result-quina">
+                        <pre><span th:text="${responseQuina}"></span></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<footer>
+    <section class="section-credits">
+        <span>Developed by <strong><a href="https://github.com/jcs-eu">Jardson Costa</a></strong></span>
+    </section>
+</footer>
+<script src='/js/scripts.js'></script>
+</body>
+</html>

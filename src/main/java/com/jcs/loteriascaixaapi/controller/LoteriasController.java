@@ -12,11 +12,13 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController()
+@RestController
 @RequestMapping("api/v0")
 public class LoteriasController {
 
@@ -71,6 +73,5 @@ public class LoteriasController {
     public Quina quinaResults() {
         return quinaService.quinaResults();
     }
-
 
 }
